@@ -1,13 +1,13 @@
 # Problem Solving
 
-A growing collection of programming problem solutions and notes. This repository documents my progress in problem solving across languages, with JavaScript work currently in place and a separate TypeScript setup planned.
+A growing collection of programming problem solutions and notes. JavaScript and TypeScript are maintained in separate environments, with this repository documenting my progress across both languages.
 
 ## Progress dashboard
 
 | Metric | Current status |
 |---|---:|
 | JavaScript problems in this repository | 35 |
-| TypeScript problems in this repository | 0 |
+| TypeScript Codewars problems in this repository | 0 |
 | Total problems in this repository | 35 |
 | Codewars completed kata | Not updated yet |
 | Current Codewars rank | Not updated yet |
@@ -19,14 +19,14 @@ The 35 JavaScript folders are documented in the existing project README history 
 | Language | Status | Problems | Location | Execution approach |
 |---|---|---:|---|---|
 | JavaScript | Active | 35 | [`JavaScript/Codewars/8-kyu/`](./JavaScript/Codewars/8-kyu/) | Each problem retains its HTML page and JavaScript file; open the problem HTML file in a browser. |
-| TypeScript | Planned; environment not implemented | 0 | Not created yet | A separate TypeScript environment and execution workflow will be introduced in a future phase. |
+| TypeScript | Active environment; no Codewars solutions yet | 0 | [`TypeScript/`](./TypeScript/) | Compile `.ts` source and tests with `tsc`; run compiled tests with Node’s built-in test runner. |
 
 ## Navigate by category
 
 - [JavaScript — Codewars — 8 kyu (35 problems)](./JavaScript/Codewars/8-kyu/)
 - [JavaScript — Codewars — 7 kyu (empty)](./JavaScript/Codewars/7-kyu/)
 - [JavaScript — Practice (empty)](./JavaScript/Practice/)
-- TypeScript — coming soon; no TypeScript directory exists yet.
+- [TypeScript environment](./TypeScript/) — independent practice, source, and test setup.
 
 ## Repository structure
 
@@ -37,10 +37,37 @@ problem-solving/
 │   │   ├── 8-kyu/  # 35 problem folders; HTML + JavaScript
 │   │   └── 7-kyu/  # currently empty (.gitkeep)
 │   └── Practice/   # currently empty (.gitkeep)
+├── TypeScript/
+│   ├── src/
+│   │   ├── practice/add.ts
+│   │   └── codewars/7-kyu/.gitkeep
+│   ├── tests/
+│   │   ├── practice/add.test.ts
+│   │   └── codewars/7-kyu/.gitkeep
+│   ├── .gitignore
+│   ├── package.json
+│   ├── package-lock.json
+│   └── tsconfig.json
 └── README.md
 ```
 
 Some JavaScript folders use `main.js` instead of `script.js`; problem 29 keeps its original nested `index/` directory. The index below links to each actual problem folder.
+
+## TypeScript environment
+
+The TypeScript project is independent of the existing HTML + JavaScript exercises. It uses CommonJS modules, strict TypeScript checking, and Node.js 20.13 or newer. TypeScript source and tests compile to the ignored `TypeScript/dist/` directory. Dependencies are installed locally under `TypeScript/`; the JavaScript workflow does not use them.
+
+From the repository root, install the project dependencies and run the available commands:
+
+```sh
+cd TypeScript
+npm install
+npm run build      # compile src/ and tests/ into dist/
+npm run typecheck  # check types without emitting files
+npm test           # build, then run compiled tests with node --test
+```
+
+The example under `src/practice/` and its matching test demonstrate the setup. This is a practice example, not a Codewars solution; TypeScript Codewars problem count remains 0.
 
 ## JavaScript problem index
 
@@ -94,13 +121,13 @@ These entries reflect the current folder names and locations. Difficulty is reco
 
 ### TypeScript
 
-A separate TypeScript environment will be introduced in a future phase. No TypeScript directory, files, or run commands are available yet; do not treat the planned setup as implemented.
+Create the solution under `TypeScript/src/practice/` or the appropriate Codewars difficulty folder, and add a matching test under `TypeScript/tests/`. From `TypeScript/`, run `npm test` to compile and execute the tests, or use `npm run typecheck` for a no-output type check. Keep TypeScript-specific files and dependencies inside `TypeScript/`, and update the problem index and counts when adding an actual problem. The current example is practice-only and does not count as a Codewars kata.
 
 ## Roadmap
 
 - [x] Reorganize the existing JavaScript problems.
 - [x] Preserve the original problem files and Git history.
 - [x] Build a professional README dashboard.
-- [ ] Set up an independent TypeScript environment.
+- [x] Set up an independent TypeScript environment.
 - [ ] Start adding TypeScript problem solutions.
 - [ ] Expand problem difficulty levels over time.

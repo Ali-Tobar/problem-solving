@@ -6,25 +6,25 @@ A growing collection of programming problem solutions and notes. JavaScript and 
 
 | Metric | Current status |
 |---|---:|
-| JavaScript problems in this repository | 35 |
+| JavaScript problems in this repository | 36 |
 | TypeScript Codewars problems in this repository | 0 |
-| Total problems in this repository | 35 |
+| Total problems in this repository | 36 |
 | Codewars completed kata | Not updated yet |
 | Current Codewars rank | Not updated yet |
 
-The 35 JavaScript folders are documented in the existing project README history as **8 kyu**; this is repository documentation, not an independent verification of each kata on Codewars. Repository folder counts are separate from Codewars account statistics.
+The repository currently contains 35 JavaScript problems documented as **8 kyu** and 1 JavaScript problem documented as **7 kyu**. These levels reflect repository documentation and are not independent verifications of each kata on Codewars. Repository problem counts are separate from Codewars account statistics.
 
 ## Languages and execution
 
 | Language | Status | Problems | Location | Execution approach |
 |---|---|---:|---|---|
-| JavaScript | Active | 35 | [`JavaScript/Codewars/8-kyu/`](./JavaScript/Codewars/8-kyu/) | Each problem retains its HTML page and JavaScript file; open the problem HTML file in a browser. |
+| JavaScript | Active | 36 | [`JavaScript/Codewars/`](./JavaScript/Codewars/) | Codewars solutions are grouped by kyu level; each problem uses its HTML page and JavaScript file. |
 | TypeScript | Active environment; no Codewars solutions yet | 0 | [`TypeScript/`](./TypeScript/) | Compile `.ts` source and tests with `tsc`; run compiled tests with Node’s built-in test runner. |
 
 ## Navigate by category
 
 - [JavaScript — Codewars — 8 kyu (35 problems)](./JavaScript/Codewars/8-kyu/)
-- [JavaScript — Codewars — 7 kyu (empty)](./JavaScript/Codewars/7-kyu/)
+- [JavaScript — Codewars — 7 kyu (1 problem)](./JavaScript/Codewars/7-kyu/)
 - [JavaScript — Practice (empty)](./JavaScript/Practice/)
 - [TypeScript environment](./TypeScript/) — independent practice, source, and test setup.
 
@@ -35,7 +35,7 @@ problem-solving/
 ├── JavaScript/
 │   ├── Codewars/
 │   │   ├── 8-kyu/  # 35 problem folders; HTML + JavaScript
-│   │   └── 7-kyu/  # currently empty (.gitkeep)
+│   │   └── 7-kyu/  # 1 problem: Vowel Count
 │   └── Practice/   # currently empty (.gitkeep)
 ├── TypeScript/
 │   ├── src/
@@ -71,7 +71,7 @@ The example under `src/practice/` and its matching test demonstrate the setup. T
 
 ## JavaScript problem index
 
-These entries reflect the current folder names and locations. Difficulty is recorded as documented in the existing project materials.
+The index is grouped by Codewars difficulty. Names and links follow the actual repository folders; difficulty labels reflect repository documentation.
 
 | # | Problem folder / documented name | Difficulty |
 |---:|---|---|
@@ -110,6 +110,12 @@ These entries reflect the current folder names and locations. Difficulty is reco
 | 33 | [33- Transportation On Vacation](./JavaScript/Codewars/8-kyu/33-%20Transportation%20On%20Vacation/) | Documented as 8 kyu |
 | 34 | [34- Exclusive Xor Operator](./JavaScript/Codewars/8-kyu/34-%20Exclusive%20Xor%20Operator/) | Documented as 8 kyu |
 | 35 | [35- Find the first non consecutive number](./JavaScript/Codewars/8-kyu/35-%20Find%20the%20first%20non%20consecutive%20number/) | Documented as 8 kyu |
+
+## JavaScript — Codewars — 7 kyu
+
+| # | Kata | Difficulty | Category / concepts |
+|---:|---|---|---|
+| 01 | [Vowel Count](./JavaScript/Codewars/7-kyu/01-%20Vowel%20Count/) | 7 kyu | Strings / Fundamentals |
 
 ## Adding a problem
 

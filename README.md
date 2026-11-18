@@ -1,60 +1,77 @@
+<div align="center">
+
 # Problem Solving
 
-A collection of programming practice and Codewars kata solutions, primarily in JavaScript, with a separate TypeScript project.
+**A growing collection of Codewars kata solutions and programming practice.**
 
-## Repository at a glance
+JavaScript · TypeScript · Problem solving fundamentals
 
-| Metric | Count |
-|---|---:|
-| JavaScript Codewars solutions | 38 |
-| — 8 kyu | 35 |
-| — 7 kyu | 3 |
-| TypeScript Codewars solutions | 1 |
-| **Total Codewars solutions** | **39** |
+</div>
 
-These figures count solutions stored in this repository, not the total kata completed on Codewars. The TypeScript practice example is not included in the totals.
+---
 
-## Latest JavaScript kata
+## Overview
 
-| # | Kata | Difficulty | Solution folder |
-|---:|---|---|---|
-| 02 | [Highest and Lowest](./JavaScript/Codewars/7-kyu/02-%20Highest%20and%20Lowest/) | 7 kyu | [`script.js`](./JavaScript/Codewars/7-kyu/02-%20Highest%20and%20Lowest/script.js) |
-| 03 | [Square Every Digit](./JavaScript/Codewars/7-kyu/03-%20Square%20Every%20Digit/) | 7 kyu | [`script.js`](./JavaScript/Codewars/7-kyu/03-%20Square%20Every%20Digit/script.js) |
+This repository documents my ongoing practice with programming challenges. It contains browser-based JavaScript solutions organized by Codewars difficulty, along with a small TypeScript project that demonstrates a typed solution and a test workflow.
 
-## Browse solutions
+The focus is on keeping solutions easy to find, inspect, and run. Counts below describe the contents of this repository; they are not Codewars account statistics.
 
-- [JavaScript Codewars — 7 kyu (3 solutions)](./JavaScript/Codewars/7-kyu/)
-- [JavaScript Codewars — 8 kyu (35 solutions)](./JavaScript/Codewars/8-kyu/)
-- [TypeScript Codewars — 8 kyu (1 solution)](./TypeScript/src/codewars/8-kyu/)
+## Repository snapshot
+
+| Language | 7 kyu | 8 kyu | Total |
+|---|---:|---:|---:|
+| JavaScript | 3 | 35 | 38 |
+| TypeScript | — | 1 | 1 |
+| **All solutions** | **3** | **36** | **39** |
+
+## Featured: latest JavaScript solutions
+
+| Kata | What it practices | Difficulty | Source |
+|---|---|---:|---|
+| [Highest and Lowest](./JavaScript/Codewars/7-kyu/02-%20Highest%20and%20Lowest/) | Parsing numeric input and finding minimum/maximum values | 7 kyu | [`script.js`](./JavaScript/Codewars/7-kyu/02-%20Highest%20and%20Lowest/script.js) |
+| [Square Every Digit](./JavaScript/Codewars/7-kyu/03-%20Square%20Every%20Digit/) | Converting and transforming digits, then composing a result | 7 kyu | [`script.js`](./JavaScript/Codewars/7-kyu/03-%20Square%20Every%20Digit/script.js) |
+
+## Solution catalogue
+
+- [JavaScript — Codewars 7 kyu](./JavaScript/Codewars/7-kyu/) · 3 solutions
+- [JavaScript — Codewars 8 kyu](./JavaScript/Codewars/8-kyu/) · 35 solutions
+- [TypeScript — Codewars 8 kyu](./TypeScript/src/codewars/8-kyu/) · 1 solution
 - [JavaScript practice](./JavaScript/Practice/)
-- [TypeScript project](./TypeScript/)
 
-## Running the solutions
+Each JavaScript kata is stored in its own numbered folder, generally with an `index.html` page and a JavaScript source file. TypeScript source, tests, and project configuration are kept separately under [`TypeScript/`](./TypeScript/).
 
-JavaScript kata folders contain an `index.html` page and a JavaScript source file. Open the page in a browser to view the solution. Source files are named `script.js` or `main.js`, depending on the kata.
+## Running the TypeScript project
 
-The TypeScript project is independent of the JavaScript exercises. From the repository root, run:
+Requirements: Node.js 20.13 or newer and npm.
 
-```sh
+```bash
 cd TypeScript
 npm install
-npm run build      # compile source and tests
-npm run typecheck  # check types without emitting files
-npm test           # build, then run the compiled tests
+npm run build      # Compile source and tests
+npm run typecheck  # Run TypeScript checks without emitting files
+npm test           # Build, then run tests with Node's test runner
 ```
 
-## Repository layout
+The TypeScript kata source is [`even-or-odd.ts`](./TypeScript/src/codewars/8-kyu/even-or-odd.ts), with its test at [`even-or-odd.test.ts`](./TypeScript/tests/codewars/8-kyu/even-or-odd.test.ts). The separate example under `TypeScript/src/practice/` is for setup practice and is not counted as a Codewars solution.
+
+## Repository structure
 
 ```text
 problem-solving/
 ├── JavaScript/
 │   ├── Codewars/
-│   │   ├── 7-kyu/  # 3 solutions
-│   │   └── 8-kyu/  # 35 solutions
+│   │   ├── 7-kyu/                 # 3 kata solutions
+│   │   └── 8-kyu/                 # 35 kata solutions
 │   └── Practice/
 ├── TypeScript/
-│   ├── src/codewars/8-kyu/  # 1 Codewars solution
-│   ├── src/practice/        # setup example
-│   └── tests/
+│   ├── src/codewars/8-kyu/        # Codewars solution
+│   ├── src/practice/              # Setup example
+│   └── tests/                     # Node.js test files
 └── README.md
 ```
+
+## Notes
+
+- Kata difficulty labels follow the folder organization in this repository.
+- JavaScript solutions use the existing HTML-and-script format and can be opened in a browser.
+- This repository is a work in progress; new solutions and improvements will be added over time.

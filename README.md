@@ -6,10 +6,10 @@ A portfolio of programming practice focused on problem solving, clear implementa
 
 <<<<<<< HEAD
 | Metric | Current status |
-| ----------------------------------------------- | --------------: |
+|---|---:|
 | JavaScript problems in this repository | 38 |
-| TypeScript Codewars problems in this repository | 0 |
-| Total problems in this repository | 38 |
+| TypeScript Codewars problems in this repository | 3 |
+| Total problems in this repository | 41 |
 | Codewars completed kata | Not updated yet |
 | Current Codewars rank | Not updated yet |
 =======

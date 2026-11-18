@@ -2,69 +2,78 @@
 
 # Problem Solving
 
-A portfolio of programming practice focused on problem solving, clear implementation, and steady progress across JavaScript and TypeScript.
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff)
+![Status](https://img.shields.io/badge/status-in_progress-2ea44f)
 
-## At a glance
+A collection of programming exercises from Codewars, written to practice problem-solving,
+algorithmic thinking, and clean, readable implementations in JavaScript and TypeScript.
 
-<<<<<<< HEAD
-| Metric | Current status |
-| ----------------------------------------------- | --------------: |
-| JavaScript problems in this repository | 38 |
-| TypeScript Codewars problems in this repository | 0 |
-| Total problems in this repository | 38 |
-| Codewars completed kata | Not updated yet |
-| Current Codewars rank | Not updated yet |
-=======
-| Repository metric | Current total |
-|---|---:|
-| JavaScript Codewars solutions | 36 |
-| — documented as 8 kyu | 35 |
-| — documented as 7 kyu | 1 |
-| TypeScript Codewars solutions | 1 |
-| Total problem solutions | 37 |
-| Codewars account rank / completed kata | Not updated yet |
+</div>
 
-> > > > > > > f73794e62c25a62b9bd189aa119227a1bb812b54
+## Overview
 
-Counts refer to solutions stored in this repository, not Codewars account statistics. Difficulty labels reflect repository documentation and have not been independently verified. The TypeScript `add` example is for checking the development setup and is not counted as a kata.
+| Language   | Exercises | Difficulty            | Location                                                             |
+| ---------- | --------: | --------------------- | -------------------------------------------------------------------- |
+| JavaScript |        38 | 35 × 8 kyu, 3 × 7 kyu | [`JavaScript/Codewars/`](./JavaScript/Codewars/)                     |
+| TypeScript |         3 | 3 × 8 kyu             | [`TypeScript/src/codewars/8-kyu/`](./TypeScript/src/codewars/8-kyu/) |
 
-## Languages and workflow
+**41 repository solutions total**
 
-<<<<<<< HEAD
-| Language | Status | Problems | Location | Execution approach |
-| ---------- | --------------------------------------------- | -------: | ------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| JavaScript | Active | 38 | [`JavaScript/Codewars/`](./JavaScript/Codewars/) | Each problem retains its HTML page and JavaScript file; open the problem HTML file in a browser. |
-| TypeScript | Active environment; no Codewars solutions yet | 0 | [`TypeScript/`](./TypeScript/) | Compile `.ts` source and tests with `tsc`; run compiled tests with Node’s built-in test runner. |
-=======
-| Language | Status | Location | How solutions are run |
-|---|---|---|---|
-| JavaScript | Active; 36 Codewars solutions | [`JavaScript/Codewars/`](./JavaScript/Codewars/) | Open the problem’s `index.html` in a browser; it loads that folder’s JavaScript solution. |
-| TypeScript | Active; 1 Codewars solution | [`TypeScript/`](./TypeScript/) | Install dependencies, compile and type-check with `tsc`, and run tests with Node’s built-in test runner. |
+> These counts describe solutions stored in this repository. Difficulty labels follow the existing folder organization and have not been verified against a Codewars account.
 
-> > > > > > > f73794e62c25a62b9bd189aa119227a1bb812b54
+## Quick start
 
-## Browse solutions
+### JavaScript
 
-<<<<<<< HEAD
+No installation is required:
 
-- [JavaScript — Codewars — 8 kyu (35 problems)](./JavaScript/Codewars/8-kyu/)
-- [JavaScript — Codewars — 7 kyu (3 problems)](./JavaScript/Codewars/7-kyu/)
-- [JavaScript — Practice (empty)](./JavaScript/Practice/)
-- # [TypeScript environment](./TypeScript/) — independent practice, source, and test setup.
-- [JavaScript Codewars — 8 kyu (35)](./JavaScript/Codewars/8-kyu/)
-- [JavaScript Codewars — 7 kyu (1)](./JavaScript/Codewars/7-kyu/)
-- [JavaScript practice](./JavaScript/Practice/) — no practice entries yet.
-- [TypeScript Codewars — 8 kyu (1)](./TypeScript/src/codewars/8-kyu/)
-- [TypeScript project](./TypeScript/) — independent source and test setup.
-  > > > > > > > f73794e62c25a62b9bd189aa119227a1bb812b54
+1. Open [`JavaScript/Codewars/`](./JavaScript/Codewars/).
+2. Choose a difficulty folder and a kata.
+3. Open the kata's `index.html` in a browser.
+4. Use the browser console to inspect output or run `script.js`/`main.js` with the kata's setup.
 
-## JavaScript solutions
+Each kata keeps its HTML and JavaScript together, so it can be used without a build tool or package installation.
+
+### TypeScript
+
+Requirements: Node.js 20.13 or later and npm.
+
+```sh
+cd TypeScript
+npm install
+npm run build
+npm run typecheck
+npm test
+```
+
+| Command             | Purpose                                                   |
+| ------------------- | --------------------------------------------------------- |
+| `npm run build`     | Compile source and test files into `dist/`                |
+| `npm run typecheck` | Check TypeScript types without creating output            |
+| `npm test`          | Compile the project and run tests with Node's test runner |
+
+## Skills practiced
+
+- Array and string manipulation
+- Conditional logic and control flow
+- Mathematical operations and number handling
+- Data transformation and filtering
+- Type-safe TypeScript implementation
+- Small Node.js unit tests
+- Organizing exercises for browser and Node.js workflows
+
+## JavaScript
+
+The JavaScript solutions use a simple HTML and JavaScript structure. Open a kata's `index.html` file in a browser to load the solution.
 
 ### Codewars — 7 kyu
 
-|   # | Kata                                                            |
-| --: | --------------------------------------------------------------- |
-|  01 | [Vowel Count](./JavaScript/Codewars/7-kyu/01-%20Vowel%20Count/) |
+|   # | Kata                                                                            |
+| --: | ------------------------------------------------------------------------------- |
+|  01 | [Vowel Count](./JavaScript/Codewars/7-kyu/01-%20Vowel%20Count/)                 |
+|  02 | [Highest and Lowest](./JavaScript/Codewars/7-kyu/02-%20Highest%20and%20Lowest/) |
+|  03 | [Square Every Digit](./JavaScript/Codewars/7-kyu/03-%20Square%20Every%20Digit/) |
 
 ### Codewars — 8 kyu
 
@@ -98,7 +107,7 @@ Counts refer to solutions stored in this repository, not Codewars account statis
 |  26 | [Sentence Smash](./JavaScript/Codewars/8-kyu/26-%20Sentence%20Smash/)                                                                 |
 |  27 | [Switch It Up](./JavaScript/Codewars/8-kyu/27-%20Switch%20It%20Up/)                                                                   |
 |  28 | [Do I Get a Bonus?](./JavaScript/Codewars/8-kyu/28-%20Do%20I%20Get%20A%20Bonus/)                                                      |
-|  29 | [Remove an Exclamation Mark from the End of a String](./JavaScript/Codewars/8-kyu/29-%20Exclamation%20marks/)                         |
+|  29 | [Remove an Exclamation Mark from the End of a String](./JavaScript/Codewars/8-kyu/29-%20Exclamation%20marks/index/index.html)         |
 |  30 | [Are You Playing Banjo?](./JavaScript/Codewars/8-kyu/30-%20Are%20You%20Playing%20Banjo/)                                              |
 |  31 | [Removing Elements](./JavaScript/Codewars/8-kyu/31-%20Removing%20Elements/)                                                           |
 |  32 | [Unfinished Loop — Bug Fixing #1](./JavaScript/Codewars/8-kyu/32-%20Unfinished%20Loop/)                                               |
@@ -106,21 +115,24 @@ Counts refer to solutions stored in this repository, not Codewars account statis
 |  34 | [Exclusive OR (XOR) Logical Operator](./JavaScript/Codewars/8-kyu/34-%20Exclusive%20Xor%20Operator/)                                  |
 |  35 | [Find the First Non-Consecutive Number](./JavaScript/Codewars/8-kyu/35-%20Find%20the%20first%20non%20consecutive%20number/)           |
 
-## TypeScript setup
+## TypeScript
 
-TypeScript is maintained as a separate Node.js project under `TypeScript/`; it does not change the HTML + JavaScript workflow. Source files live in `src/`, tests live in `tests/`, and compiled output goes to the ignored `dist/` directory.
+The TypeScript project is a separate Node.js setup for compilation and tests.
 
-From the repository root, run:
+|   # | Kata                       | Source                                                                                           | Tests                                                                                                        |
+| --: | -------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+|  01 | Even or Odd                | [`even-or-odd.ts`](./TypeScript/src/codewars/8-kyu/even-or-odd.ts)                               | [`even-or-odd.test.ts`](./TypeScript/tests/codewars/8-kyu/even-or-odd.test.ts)                               |
+|  02 | Return to Sanity           | [`return-to-sanity.ts`](./TypeScript/src/codewars/8-kyu/return-to-sanity.ts)                     | —                                                                                                            |
+|  03 | Find Nearest Square Number | [`find-nearest-square-number.ts`](./TypeScript/src/codewars/8-kyu/find-nearest-square-number.ts) | [`find-nearest-square-number.test.ts`](./TypeScript/tests/codewars/8-kyu/find-nearest-square-number.test.ts) |
 
-```sh
-cd TypeScript
-npm install
-npm run build      # Compile source and tests
-npm run typecheck  # Run TypeScript checks without emitting files
-npm test           # Build, then run tests with Node's test runner
-```
+The [`TypeScript/src/practice/add.ts`](./TypeScript/src/practice/add.ts) and [`TypeScript/tests/practice/add.test.ts`](./TypeScript/tests/practice/add.test.ts) files are development setup examples. They are not included in the kata count.
 
-The TypeScript kata source is [`even-or-odd.ts`](./TypeScript/src/codewars/8-kyu/even-or-odd.ts), with its test at [`even-or-odd.test.ts`](./TypeScript/tests/codewars/8-kyu/even-or-odd.test.ts). The separate example under `TypeScript/src/practice/` is for setup practice and is not counted as a Codewars solution.
+## Project status
+
+- JavaScript: active with 38 Codewars solutions.
+- TypeScript: active with 3 Codewars solutions and 2 tested kata implementations.
+- Practice folders: present, but no independent JavaScript practice exercises are added yet.
+- Future work: add more kyu levels, JavaScript practice exercises, and tests for additional TypeScript solutions.
 
 ## Repository structure
 
@@ -131,15 +143,18 @@ problem-solving/
 │   │   ├── 7-kyu/                 # 3 kata solutions
 │   │   └── 8-kyu/                 # 35 kata solutions
 │   └── Practice/
-├── TypeScript/
-│   ├── src/codewars/8-kyu/        # Codewars solution
-│   ├── src/practice/              # Setup example
-│   └── tests/                     # Node.js test files
-└── README.md
+└── TypeScript/
+    ├── src/
+    │   ├── codewars/8-kyu/        # 3 kata solutions
+    │   └── practice/              # Setup example
+    └── tests/codewars/8-kyu/      # Node.js test files
 ```
 
-## Notes
+## Contributing
 
-- Kata difficulty labels follow the folder organization in this repository.
-- JavaScript solutions use the existing HTML-and-script format and can be opened in a browser.
-- This repository is a work in progress; new solutions and improvements will be added over time.
+New solutions should follow the existing structure:
+
+1. Place JavaScript katas in the matching `JavaScript/Codewars/<difficulty>/` folder.
+2. Place TypeScript katas in `TypeScript/src/codewars/<difficulty>/`.
+3. Add a corresponding test in `TypeScript/tests/codewars/<difficulty>/` when applicable.
+4. Update the overview and solution table in this README.

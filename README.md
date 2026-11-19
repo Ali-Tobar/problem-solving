@@ -15,10 +15,10 @@ algorithmic thinking, and clean, readable implementations in JavaScript and Type
 
 | Language   | Exercises | Difficulty            | Location                                                             |
 | ---------- | --------: | --------------------- | -------------------------------------------------------------------- |
-| JavaScript |        38 | 35 × 8 kyu, 3 × 7 kyu | [`JavaScript/Codewars/`](./JavaScript/Codewars/)                     |
-| TypeScript |         3 | 3 × 8 kyu             | [`TypeScript/src/codewars/8-kyu/`](./TypeScript/src/codewars/8-kyu/) |
+| JavaScript |        40 | 35 × 8 kyu, 5 × 7 kyu | [`JavaScript/Codewars/`](./JavaScript/Codewars/)                     |
+| TypeScript |         5 | 5 × 8 kyu             | [`TypeScript/src/codewars/8-kyu/`](./TypeScript/src/codewars/8-kyu/) |
 
-**41 repository solutions total**
+**45 repository solutions total**
 
 > These counts describe solutions stored in this repository. Difficulty labels follow the existing folder organization and have not been verified against a Codewars account.
 
@@ -74,6 +74,8 @@ The JavaScript solutions use a simple HTML and JavaScript structure. Open a kata
 |  01 | [Vowel Count](./JavaScript/Codewars/7-kyu/01-%20Vowel%20Count/)                 |
 |  02 | [Highest and Lowest](./JavaScript/Codewars/7-kyu/02-%20Highest%20and%20Lowest/) |
 |  03 | [Square Every Digit](./JavaScript/Codewars/7-kyu/03-%20Square%20Every%20Digit/) |
+|  04 | [Descending Order](./JavaScript/Codewars/7-kyu/04-%20Descending%20Order/)      |
+|  05 | [Get the Middle Character](./JavaScript/Codewars/7-kyu/05-%20Get%20the%20Middle%20Character/) |
 
 ### Codewars — 8 kyu
 
@@ -119,18 +121,20 @@ The JavaScript solutions use a simple HTML and JavaScript structure. Open a kata
 
 The TypeScript project is a separate Node.js setup for compilation and tests.
 
-|   # | Kata                       | Source                                                                                           | Tests                                                                                                        |
-| --: | -------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
-|  01 | Even or Odd                | [`even-or-odd.ts`](./TypeScript/src/codewars/8-kyu/even-or-odd.ts)                               | [`even-or-odd.test.ts`](./TypeScript/tests/codewars/8-kyu/even-or-odd.test.ts)                               |
-|  02 | Return to Sanity           | [`return-to-sanity.ts`](./TypeScript/src/codewars/8-kyu/return-to-sanity.ts)                     | —                                                                                                            |
-|  03 | Find Nearest Square Number | [`find-nearest-square-number.ts`](./TypeScript/src/codewars/8-kyu/find-nearest-square-number.ts) | [`find-nearest-square-number.test.ts`](./TypeScript/tests/codewars/8-kyu/find-nearest-square-number.test.ts) |
+|   # | Kata                          | Source                                                                                           | Tests                                                                                                        |
+| --: | ----------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+|  01 | Even or Odd                   | [`even-or-odd.ts`](./TypeScript/src/codewars/8-kyu/even-or-odd.ts)                               | [`even-or-odd.test.ts`](./TypeScript/tests/codewars/8-kyu/even-or-odd.test.ts)                               |
+|  02 | Return to Sanity              | [`return-to-sanity.ts`](./TypeScript/src/codewars/8-kyu/return-to-sanity.ts)                     | —                                                                                                            |
+|  03 | Find Nearest Square Number    | [`find-nearest-square-number.ts`](./TypeScript/src/codewars/8-kyu/find-nearest-square-number.ts) | [`find-nearest-square-number.test.ts`](./TypeScript/tests/codewars/8-kyu/find-nearest-square-number.test.ts) |
+|  04 | Reversed Strings              | [`reversed-strings.ts`](./TypeScript/src/codewars/8-kyu/reversed-strings.ts)                     | [`reversed-strings.test.ts`](./TypeScript/tests/codewars/8-kyu/reversed-strings.test.ts)                     |
+|  05 | Convert a Boolean to a String | [`convert-a-boolean-to-a-string.ts`](./TypeScript/src/codewars/8-kyu/convert-a-boolean-to-a-string.ts) | [`convert-a-boolean-to-a-string.test.ts`](./TypeScript/tests/codewars/8-kyu/convert-a-boolean-to-a-string.test.ts) |
 
 The [`TypeScript/src/practice/add.ts`](./TypeScript/src/practice/add.ts) and [`TypeScript/tests/practice/add.test.ts`](./TypeScript/tests/practice/add.test.ts) files are development setup examples. They are not included in the kata count.
 
 ## Project status
 
-- JavaScript: active with 38 Codewars solutions.
-- TypeScript: active with 3 Codewars solutions and 2 tested kata implementations.
+- JavaScript: active with 40 Codewars solutions.
+- TypeScript: active with 5 Codewars solutions and 4 tested kata implementations.
 - Practice folders: present, but no independent JavaScript practice exercises are added yet.
 - Future work: add more kyu levels, JavaScript practice exercises, and tests for additional TypeScript solutions.
 
@@ -140,12 +144,12 @@ The [`TypeScript/src/practice/add.ts`](./TypeScript/src/practice/add.ts) and [`T
 problem-solving/
 ├── JavaScript/
 │   ├── Codewars/
-│   │   ├── 7-kyu/                 # 3 kata solutions
+│   │   ├── 7-kyu/                 # 5 kata solutions
 │   │   └── 8-kyu/                 # 35 kata solutions
 │   └── Practice/
 └── TypeScript/
     ├── src/
-    │   ├── codewars/8-kyu/        # 3 kata solutions
+    │   ├── codewars/8-kyu/        # 5 kata solutions
     │   └── practice/              # Setup example
     └── tests/codewars/8-kyu/      # Node.js test files
 ```
